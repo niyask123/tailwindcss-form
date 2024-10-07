@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="bg-[#f5f5f5]">
+        <div class="container  mx-auto flex flex-col lg:py-6">
+            <div
+                class="bg-[url('/asset/img/bghead.png')] flex-col lg:flex-row gap-3 items-center p-12 text-white bg-cover flex justify-between rounded-md bg-current w-full lg:h-40">
+                <div class="flex flex-1 flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                        <img src="/asset/img/logo.png" class="object-contain w-10" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-sm">Welcome to</div>
+                            <div class="text-base">Tech Butomy Pvt Ltd</div>
+                        </div>
+                    </div>
+                    <div class="text-lg font-semibold">Employee Onboarding Form</div>
+                </div>
+                <div class="h-full flex-1 justify-center flex items-end">
+                    <img src="/asset/img/steps/stp5.png" class="object-contain  lg:h-4 " alt="">
+                </div>
+                <div class="flex flex-1 gap-3 justify-end items-end h-full">
+                    <a href="/dist/third.html"><button class="btn-one">Previous</button></a>
+                    <a href="final.html"><button class="btn-white">Finish</button></a>
+                </div>
+            </div>
+
+
+
+            <!-- Accordion start -->
+            <div class="space-y-2 bg-white lg:p-10 my-10 rounded-md">
+                <!-- Accordion Item 1 -->
+                <div class="  rounded-md">
+                    <div class="flex gap-3 justify-center items-center p-4 cursor-pointer" onclick="toggleAccordion(1)">
+                        <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                            </path>
+                        </svg>
+                        <h3 class="font-semibold text-nowrap">Documents</h3>
+                        <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+                    </div>
+                    <div id="content-1" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                        style="overflow: hidden;">
+
+
+                        <div class="flex flex-col gap-5">
+                            <h6 class="">1. Add Passport, Visa & Identity</h6>
+
+                            <div class="">
+                                <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                    <div class="">
+                                        <label for="name">Document Name</label>
+                                        <input type="text" class="input-text">
+                                    </div>
+                                    <div class="">
+                                        <label for="name">Document Type</label>
+                                        <select class="input-text text-[#7F7F7F]">
+                                            <option value="">Passport</option>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <label for="name">Issued Authority</label>
+                                        <input type="text" class="input-text">
+                                    </div>
+                                    <div class="">
+                                        <label for="name">Issued Date</label>
+                                        <input type="date" class="input-text">
+                                    </div>
+                                    <div class="">
+                                        <label for="name">Expiry Date</label>
+                                        <input type="date" class="input-text">
+                                    </div>
+                                    <div class="">
+                                        <label for="name">Status</label>
+                                        <input type="text" class="input-text">
+                                    </div>
+
+                                    <div class="flex gap-3 pb-10">
+                                        <button class="addbtn">Add</button>
+                                        <button class="cancelbtn">Add</button>
+                                    </div>
+                                </div>
+                                <h6 class="">2. Passport, Visa & Identity</h6>
+                                <div class="overflow-x-auto w-full">
+                                    <table class="table-fixed lg:w-full rounded-md">
+                                        <tbody class="bg-[#E6E6E6] font-normal">
+                                            <tr class="">
+                                                <td class="text-[#525252]">Documnet Name</td>
+                                                <td class="text-[#525252]">Passport</td>
+                                                <td class="text-[#525252]">Issued Authority</td>
+                                                <td class="text-[#525252] ">Issued Date</td>
+                                                <td class="text-[#525252] ">Expiry Date</td>
+                                                <td class="text-[#525252] ">Status</td>
+                                                <td class="text-[#525252] text-center ">Action</td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>Passport 1</td>
+                                                <td>Passport</td>
+                                                <td>Authority name</td>
+                                                <td>24/02/2023</td>
+                                                <td>24/02/2023</td>
+                                                <td>
+                                                    <div class="activetbl">Active</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="flex justify-center items-center h-full">
+                                                        <img src="/asset/img/icons/dlt.png" class="object-contain"
+                                                            alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Passport 1</td>
+                                                <td>Passport</td>
+                                                <td>Authority name</td>
+                                                <td>24/02/2023</td>
+                                                <td>24/02/2023</td>
+                                                <td>
+                                                    <div class="inactivetbl">Active</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="flex justify-center items-center h-full">
+                                                        <img src="/asset/img/icons/dlt.png" class="object-contain"
+                                                            alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 2 -->
+                                <div class="">
+                                    <h6 class="">2. Add Recruitment, Selection & Documents</h6>
+
+                                    <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                        <div class="">
+                                            <label for="name">Document Name</label>
+                                            <input type="text" class="input-text">
+                                        </div>
+                                        <div class="">
+                                            <label for="name">Document Type</label>
+                                            <select class="input-text text-[#7F7F7F]">
+                                                <option value="">Passport</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <label for="name">Issued Authority</label>
+                                            <input type="text" class="input-text">
+                                        </div>
+                                        <div class="">
+                                            <label for="name">Issued Date</label>
+                                            <input type="date" class="input-text">
+                                        </div>
+                                        <div class="">
+                                            <label for="name">Expiry Date</label>
+                                            <input type="date" class="input-text">
+                                        </div>
+                                        <div class="">
+                                            <label for="name">Status</label>
+                                            <input type="text" class="input-text">
+                                        </div>
+
+                                        <div class="flex gap-3 pb-10">
+                                            <button class="addbtn">Add</button>
+                                            <button class="cancelbtn">Add</button>
+                                        </div>
+                                    </div>
+                                    <h6 class="">Recruitment, Selection & Documents</h6>
+                                    <div class="overflow-x-auto w-full">
+                                        <table class="table-fixed lg:w-full rounded-md">
+                                            <tbody class="bg-[#E6E6E6] font-normal">
+                                                <tr class="">
+                                                    <td class="text-[#525252]">Documnet Name</td>
+                                                    <td class="text-[#525252]">Passport</td>
+                                                    <td class="text-[#525252]">Issued Authority</td>
+                                                    <td class="text-[#525252] ">Issued Date</td>
+                                                    <td class="text-[#525252] ">Expiry Date</td>
+                                                    <td class="text-[#525252] ">Status</td>
+                                                    <td class="text-[#525252] text-center ">Action</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Passport 1</td>
+                                                    <td>Passport</td>
+                                                    <td>Authority name</td>
+                                                    <td>24/02/2023</td>
+                                                    <td>24/02/2023</td>
+                                                    <td>
+                                                        <div class="activetbl">Active</div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div
+                                                            class="flex justify-center flex-wrap w-full gap-2 items-center h-full">
+                                                            <img src="/asset/img/icons/arrow.png" class="object-contain"
+                                                                alt="">
+                                                            <img src="/asset/img/icons/pen.png" class="object-contain"
+                                                                alt="">
+                                                            <img src="/asset/img/icons/dlt.png" class="object-contain"
+                                                                alt="">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Passport 1</td>
+                                                    <td>Passport</td>
+                                                    <td>Authority name</td>
+                                                    <td>24/02/2023</td>
+                                                    <td>24/02/2023</td>
+                                                    <td>
+                                                        <div class="inactivetbl">Active</div>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <div
+                                                            class="flex justify-center flex-wrap gap-2 items-center h-full">
+                                                            <img src="/asset/img/icons/arrow.png" class="object-contain"
+                                                                alt="">
+                                                            <img src="/asset/img/icons/pen.png" class="object-contain"
+                                                                alt="">
+                                                            <img src="/asset/img/icons/dlt.png" class="object-contain"
+                                                                alt="">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="">
+                                        <h6 class="">3. Add COS Details</h6>
+
+                                        <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                            <div class="">
+                                                <label for="name">Document Name</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Document Type</label>
+                                                <select class="input-text text-[#7F7F7F]">
+                                                    <option value="">COS</option>
+                                                </select>
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Issued Authority</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Issued Date</label>
+                                                <input type="date" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Expiry Date</label>
+                                                <input type="date" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Status</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+
+                                            <div class="flex gap-3 pb-10">
+                                                <button class="addbtn">Add</button>
+                                                <button class="cancelbtn">Add</button>
+                                            </div>
+                                        </div>
+                                        <h6 class="">COS Details</h6>
+                                        <div class="overflow-x-auto w-full">
+                                            <table class="table-fixed lg:w-full rounded-md">
+                                                <tbody class="bg-[#E6E6E6] font-normal">
+                                                    <tr class="">
+                                                        <td class="text-[#525252]">Documnet Name</td>
+                                                        <td class="text-[#525252]">Passport</td>
+                                                        <td class="text-[#525252]">Issued Authority</td>
+                                                        <td class="text-[#525252] ">Issued Date</td>
+                                                        <td class="text-[#525252] ">Expiry Date</td>
+                                                        <td class="text-[#525252] ">Status</td>
+                                                        <td class="text-[#525252] text-center ">Action</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>COS Details 1</td>
+                                                        <td>COS Details</td>
+                                                        <td>Authority name</td>
+                                                        <td>24/02/2023</td>
+                                                        <td>24/02/2023</td>
+                                                        <td>
+                                                            <div class="activetbl">Active</div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div
+                                                                class="flex flex-wrap justify-center gap-2 items-center h-full">
+                                                                <img src="/asset/img/icons/arrow.png"
+                                                                    class="object-contain" alt="">
+                                                                <img src="/asset/img/icons/pen.png"
+                                                                    class="object-contain" alt="">
+                                                                <img src="/asset/img/icons/dlt.png"
+                                                                    class="object-contain" alt="">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!-- 4 -->
+                                        <div class="">
+                                            <h6 class="">3. Add Offer Letter, Contract & Declaration</h6>
+
+                                            <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                                <div class="">
+                                                    <label for="name">Document Name</label>
+                                                    <input type="text" class="input-text">
+                                                </div>
+                                                <div class="">
+                                                    <label for="name">Document Type</label>
+                                                    <select class="input-text text-[#7F7F7F]">
+                                                        <option value="">COS</option>
+                                                    </select>
+                                                </div>
+                                                <div class="">
+                                                    <label for="name">Issued Authority</label>
+                                                    <input type="text" class="input-text">
+                                                </div>
+                                                <div class="">
+                                                    <label for="name">Issued Date</label>
+                                                    <input type="date" class="input-text">
+                                                </div>
+                                                <div class="">
+                                                    <label for="name">Expiry Date</label>
+                                                    <input type="date" class="input-text">
+                                                </div>
+                                                <div class="">
+                                                    <label for="name">Status</label>
+                                                    <input type="text" class="input-text">
+                                                </div>
+
+                                                <div class="flex gap-3 pb-10">
+                                                    <button class="addbtn">Add</button>
+                                                    <button class="cancelbtn">Add</button>
+                                                </div>
+                                            </div>
+                                            <h6 class="">Offer Letter, Contract & Declaration</h6>
+                                            <div class="overflow-x-auto w-full">
+                                                <table class="table-fixed lg:w-full rounded-md">
+                                                    <tbody class="bg-[#E6E6E6] font-normal">
+                                                        <tr class="">
+                                                            <td class="text-[#525252]">Documnet Name</td>
+                                                            <td class="text-[#525252]">Passport</td>
+                                                            <td class="text-[#525252]">Issued Authority</td>
+                                                            <td class="text-[#525252] ">Issued Date</td>
+                                                            <td class="text-[#525252] ">Expiry Date</td>
+                                                            <td class="text-[#525252] ">Status</td>
+                                                            <td class="text-[#525252] text-center ">Action</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Conditional 1</td>
+                                                            <td>Conditional offer letter</td>
+                                                            <td>Authority name</td>
+                                                            <td>24/02/2023</td>
+                                                            <td>24/02/2023</td>
+                                                            <td>
+                                                                <div class="activetbl">Active</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div
+                                                                    class="flex flex-wrap justify-center gap-2 items-center h-full">
+                                                                    <img src="/asset/img/icons/arrow.png"
+                                                                        class="object-contain" alt="">
+                                                                    <img src="/asset/img/icons/pen.png"
+                                                                        class="object-contain" alt="">
+                                                                    <img src="/asset/img/icons/dlt.png"
+                                                                        class="object-contain" alt="">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Conditional 1</td>
+                                                            <td>Conditional offer letter</td>
+                                                            <td>Authority name</td>
+                                                            <td>24/02/2023</td>
+                                                            <td>24/02/2023</td>
+                                                            <td>
+                                                                <div class="inactivetbl">Active</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div
+                                                                    class="flex flex-wrap justify-center gap-2 items-center h-full">
+                                                                    <img src="/asset/img/icons/arrow.png"
+                                                                        class="object-contain" alt="">
+                                                                    <img src="/asset/img/icons/pen.png"
+                                                                        class="object-contain" alt="">
+                                                                    <img src="/asset/img/icons/dlt.png"
+                                                                        class="object-contain" alt="">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Item 2 -->
+                                <div class="rounded-md">
+                                    <div class="flex gap-3 justify-center items-center p-4 cursor-pointer"
+                                        onclick="toggleAccordion(2)">
+                                        <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 15l7-7 7 7">
+                                            </path>
+                                        </svg>
+                                        <h3 class="font-semibold text-nowrap">Bank Details</h3>
+                                        <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+                                    </div>
+                                    <div id="content-2" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                                        style="overflow: hidden;">
+                                        <h6 class="">Add Bank Details</h6>
+
+                                        <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                            <div class="">
+                                                <label for="name">Account Type</label>
+                                                <select class="input-text text-[#7F7F7F]">
+                                                    <option value="">Savings</option>
+                                                </select>
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Bank Name</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Branch</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">IBAN Number</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Swift Code</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="">
+                                                <label for="name">Sort Code</label>
+                                                <input type="text" class="input-text">
+                                            </div>
+                                            <div class="flex gap-3 pb-10">
+                                                <button class="addbtn">Add</button>
+                                                <button class="cancelbtn">Add</button>
+                                            </div>
+                                        </div>
+                                        <h6 class="">Add Skills/Qualifications</h6>
+                                        <div class="overflow-x-auto w-full">
+                                            <table class="table-fixed lg:w-full rounded-md">
+                                                <tbody class="bg-[#E6E6E6] font-normal">
+                                                    <tr class="">
+                                                        <td class="text-[#525252]">Sl No.</td>
+                                                        <td class="text-[#525252]">Bank Name</td>
+                                                        <td class="text-[#525252]">Branch</td>
+                                                        <td class="text-[#525252]">IBAN Number</td>
+                                                        <td class="text-[#525252]">Acc. Holders Name</td>
+                                                        <td class="text-[#525252]">Swift Code</td>
+                                                        <td class="text-[#525252]">SAs of date</td>
+                                                        <td class="text-[#525252] text-center">Action</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>SBI</td>
+                                                        <td>Peyad</td>
+                                                        <td>123 256 4512</td>
+                                                        <td>Mammutty P S</td>
+                                                        <td>12345678</td>
+                                                        <td>24/02/2023</td>
+                                                        <td class="text-center">
+                                                            <div
+                                                                class="flex flex-wrap justify-center gap-2 items-center h-full">
+                                                                <img src="/asset/img/icons/arrow.png"
+                                                                    class="object-contain" alt="">
+                                                                <img src="/asset/img/icons/pen.png"
+                                                                    class="object-contain" alt="">
+                                                                <img src="/asset/img/icons/dlt.png"
+                                                                    class="object-contain" alt="">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion end -->
+
+
+                            </div>
+                        </div>
+
+
+                        <script src="/src/script.js"></script>
+</body>
+
+</html>

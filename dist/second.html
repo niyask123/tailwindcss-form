@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="bg-[#f5f5f5]">
+        <div class="container  mx-auto flex flex-col pb-6 lg:pb-0 lg:py-6">
+            <div
+                class="bg-[url('/asset/img/bghead.png')] gap-3 items-center p-12 text-white bg-cover flex flex-col lg:flex-row justify-between rounded-md bg-current w-full lg:h-40">
+                <div class="flex flex-1 flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                        <img src="/asset/img/logo.png" class="object-contain w-10" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-sm">Welcome to</div>
+                            <div class="text-base">Tech Butomy Pvt Ltd</div>
+                        </div>
+                    </div>
+                    <div class="text-lg font-semibold">Employee Onboarding Form</div>
+                </div>
+                <div class="h-full flex-1 justify-center flex items-end">
+                    <img src="/asset/img/steps/stp2.png" class="object-contain h-4" alt="">
+                </div>
+                <div class="flex flex-1 gap-3 justify-end items-end h-full">
+                    <a href="/dist/index.html"><button class="btn-one">Previous</button></a>
+                    <a href="/dist/third.html"><button class="btn-white">Next</button></a>
+                </div>
+            </div>
+
+
+
+            <!-- Accordion start -->
+            <div class="space-y-2 bg-white lg:p-10 my-10 rounded-md">
+                <!-- Accordion Item 1 -->
+                <div class="  rounded-md">
+                    <div class="flex gap-3 justify-center items-center p-4 cursor-pointer" onclick="toggleAccordion(1)">
+                        <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                            </path>
+                        </svg>
+                        <h3 class="font-semibold text-nowrap">Skills/Qualifications</h3>
+                        <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+                    </div>
+                    <div id="content-1" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                        style="overflow: hidden;">
+                        <h6 class="">Add Skills/Qualifications</h6>
+
+                        <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                            <div class="">
+                                <label for="name">Type</label>
+                                <input type="text" class="input-text">
+                            </div>
+                            <div class="">
+                                <label for="name">Title</label>
+                                <input type="text" class="input-text">
+                            </div>
+                            <div class="">
+                                <label for="" class="">Start Date</label>
+                                <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                            </div>
+                            <div class="">
+                                <label for="" class="">End Date</label>
+                                <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                            </div>
+                            <div class="">
+                                <label for="name">Status</label>
+                                <input type="text" class="input-text">
+                            </div>
+                            <div class="">
+                                <label for="name">Institution</label>
+                                <input type="text" class="input-text">
+                            </div>
+                            <div class="">
+                                <label for="">Certficate</label>
+                                <div class="flex flex-col items-center justify-center w-full">
+                                    <label for="file-upload"
+                                        class="flex gap-2 items-center justify-center w-full h-12 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                        <!-- SVG Icon for Upload -->
+                                        <img src="/asset/img/upload.svg" class="object-contain w-fit h-fit" alt="">
+                                        <span class="mt-2 text-base font-semibold text-gray-500">Upload
+                                            Certificate</span>
+                                        <input id="file-upload" type="file" class="hidden" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class=""></div>
+                            <div class="flex gap-3 pb-10">
+                                <button class="addbtn">Add</button>
+                                <button class="cancelbtn">Add</button>
+                            </div>
+                        </div>
+                        <h6 class="">Add Skills/Qualifications</h6>
+                        <div class="overflow-x-auto w-full">
+                            <table class="table-fixed lg:w-full rounded-md">
+                                <tbody class="bg-[#E6E6E6] font-normal">
+                                    <tr class="">
+                                        <td class="text-[#525252]">Type</td>
+                                        <td class="text-[#525252]">Title</td>
+                                        <td class="text-[#525252]">Institution</td>
+                                        <td class="text-[#525252]">Start Date</td>
+                                        <td class="text-[#525252]">End Date</td>
+                                        <td class="text-[#525252]">Status</td>
+                                        <td class="text-[#525252]">Documnet</td>
+                                        <td class="text-[#525252] text-center">Action</td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Degree</td>
+                                        <td>Btech</td>
+                                        <td>Cet Trivandrum</td>
+                                        <td>22/08/2023</td>
+                                        <td>22/08/2024</td>
+                                        <td>22/08/2024</td>
+                                        <td class="text-blue-600">Document1.pdf</td>
+                                        <td class="text-center flex justify-center"><img src="/asset/img/icons/dlt.png"
+                                                alt=""></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="rounded-md">
+                        <div class="flex gap-3 justify-center items-center p-4 cursor-pointer"
+                            onclick="toggleAccordion(2)">
+                            <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                                </path>
+                            </svg>
+                            <h3 class="font-semibold text-nowrap">Experience</h3>
+                            <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+                        </div>
+                        <div id="content-2" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                            style="overflow: hidden;">
+                            <h6 class="">Add Skills/Qualifications</h6>
+
+                            <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                                <div class="">
+                                    <label for="name">Job role</label>
+                                    <input type="text" class="input-text">
+                                </div>
+                                <div class="">
+                                    <label for="name">Employer</label>
+                                    <input type="text" class="input-text">
+                                </div>
+                                <div class="">
+                                    <label for="" class="">Start Date</label>
+                                    <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                                </div>
+                                <div class="">
+                                    <label for="" class="">End Date</label>
+                                    <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                                </div>
+                                <div class="">
+                                    <label for="name">Employer details</label>
+                                    <input type="text" class="input-text">
+                                </div>
+                                <div class="">
+                                    <label for="">Certficate</label>
+                                    <div class="flex flex-col items-center justify-center w-full">
+                                        <label for="file-upload"
+                                            class="flex gap-2 items-center justify-center w-full h-12 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                            <!-- SVG Icon for Upload -->
+                                            <img src="/asset/img/upload.svg" class="object-contain w-fit h-fit" alt="">
+                                            <span class="mt-2 text-base font-semibold text-gray-500">Upload
+                                                Certificate</span>
+                                            <input id="file-upload" type="file" class="hidden" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 pb-10">
+                                    <button class="addbtn">Add</button>
+                                    <button class="cancelbtn">Add</button>
+                                </div>
+                            </div>
+                            <h6 class="">Add Skills/Qualifications</h6>
+                            <div class="overflow-x-auto w-full">
+                                <table class="table-fixed lg:w-full rounded-md">
+                                    <tbody class="bg-[#E6E6E6] font-normal">
+                                        <tr class="">
+                                            <td class="text-[#525252]">Job role</td>
+                                            <td class="text-[#525252]">Employer</td>
+                                            <td class="text-[#525252]">Employer details</td>
+                                            <td class="text-[#525252]">Start Date</td>
+                                            <td class="text-[#525252]">End Date</td>
+                                            <td class="text-[#525252]">Document</td>
+                                            <td class="text-[#525252] text-center">Action</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td>UI/UX Designer</td>
+                                            <td>UTech Butomy Pvt Ltd</td>
+                                            <td>Tech Butomy Pvt Ltd</td>
+                                            <td>22/08/2023</td>
+                                            <td>22/08/2024</td>
+                                            <td class="text-blue-600">Document1.pdf</td>
+                                            <td class="text-center flex justify-center"><img
+                                                    src="/asset/img/icons/dlt.png" alt=""></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion end -->
+
+
+                </div>
+            </div>
+
+
+            <script src="/src/script.js"></script>
+</body>
+
+</html>

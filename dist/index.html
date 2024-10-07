@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="bg-[#f5f5f5]">
+        <div class="container  mx-auto flex flex-col pb-6 lg:pb-0 lg:py-6">
+            <div
+                class="bg-[url('/asset/img/bghead.png')] gap-3 items-center p-12 text-white bg-cover flex flex-col lg:flex-row justify-between rounded-md bg-current w-full lg:h-40">
+                <div class="flex flex-1 flex-col gap-2">
+                    <div class="flex gap-2 items-center">
+                        <img src="/asset/img/logo.png" class="object-contain w-10" alt="">
+                        <div class="flex flex-col">
+                            <div class="text-sm">Welcome to</div>
+                            <div class="text-base">Tech Butomy Pvt Ltd</div>
+                        </div>
+                    </div>
+                    <div class="text-lg font-semibold">Employee Onboarding Form</div>
+                </div>
+                <div class="h-full flex-1 justify-center flex items-end">
+                    <img src="/asset/img/steps/step1.png" class="object-contain h-4" alt="">
+                </div>
+                <div class="flex flex-1 justify-end items-end h-full">
+                    <a href="second.html"> <button class="btn-white">Next</button></a>
+                </div>
+            </div>
+
+
+
+            <!-- Accordion start -->
+            <div class="space-y-2 bg-white lg:p-10 my-10 rounded-md">
+                <!-- Accordion Item 1 -->
+                <div class="  rounded-md">
+                    <div class="flex gap-3 justify-center items-center p-4 cursor-pointer" onclick="toggleAccordion(1)">
+                        <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                            </path>
+                        </svg>
+                        <h3 class="font-semibold text-nowrap">Basic Details</h3>
+                        <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+
+                    </div>
+                    <div id="content-1" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                        style="overflow: hidden;">
+                        <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                            <div class="">
+                                <label for="name">Employee ID</label>
+                                <input type="text" class="input-text">
+                            </div>
+                            <div class="">
+                                <label for="name">First Name</label>
+                                <input type="text" class="input-text" placeholder="Enter First Name">
+                            </div>
+                            <div class="">
+                                <label for="name">Surename</label>
+                                <input type="text" class="input-text" placeholder="Enter Middle Name">
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Date of birth</label>
+                                <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Gender</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Nationality</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Inidan">Indian</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Country</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Inidan">Indian</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="required">City</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Inidan">Indian</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="">Blood Group</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Inidan">Indian</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="">National Insurance Number</label>
+                                <input type="text" class="input-text" placeholder="Insurance Number">
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Home Address</label>
+                                <textarea name="" class="textarea" id=""></textarea>
+                            </div>
+                            <div class="">
+                                <div class="flex gap-3 items-center">
+                                    <label for="" class="required">Communication Address</label>
+                                    <div class="flex gap-2 items-center">
+                                        <input type="checkbox">
+                                        <span class="text-xs text-[#8B8B8B]">Same as home</span>
+                                    </div>
+                                </div>
+                                <textarea name="" class="textarea" id=""></textarea>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="rounded-md">
+                    <div class="flex gap-3 justify-center items-center p-4 cursor-pointer" onclick="toggleAccordion(2)">
+                        <svg id="icon-1" class="w-6 h-6 transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7">
+                            </path>
+                        </svg>
+                        <h3 class="font-semibold text-nowrap">Work Details</h3>
+                        <div class=" h-[.1rem] bg-[#2C2C2C]/20 w-full"></div>
+
+                    </div>
+                    <div id="content-2" class="p-4 transition-all duration-300 ease-in-out max-h-auto"
+                        style="overflow: hidden;">
+                        <div class="grid lg:grid-cols-2 gap-3 lg:w-1/2 gap-y-5">
+                            <div class="">
+                                <label for="" class="">Department</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Select Department">Select Department</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="">Role</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Select Department">Select Role</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="">Designation</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Select Department">Select Department</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Date of Joining</label>
+                                <input type="date" placeholder="DD-MM-YYYY" class="input-text text-[#7F7F7F]" />
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Work Location</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="">Select Work Locaion</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="">Employee type</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="">Select Employment Type</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Mobile Number</label>
+                                <input type="number" class="input-text" placeholder="Enter Mobile Number">
+                            </div>
+                            <div class="">
+                                <label for="" class="required">Marital Status</label>
+                                <select class="input-text text-[#7F7F7F]">
+                                    <option value="Inidan">Select Marital Statur</option>
+                                </select>
+                            </div>
+
+                            <div class="">
+                                <label for="" class="">Personal Email Address</label>
+                                <input type="email" class="input-text" placeholder="Enter Email Address">
+                            </div>
+                            <div class="">
+                                <label for="" class="">Work Email Address</label>
+                                <input type="email" class="input-text" placeholder="Enter Email Address">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion end -->
+
+
+        </div>
+    </div>
+
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>

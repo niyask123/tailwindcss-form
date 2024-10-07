@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-white {
+  @apply bg-white text-[#141c5b] text-base px-8 rounded-md h-9  font-semibold transition-transform duration-200 ease-in-out transform hover:scale-105 hover:bg-[#f1f0f0];
+}
+.btn-one {
+  @apply bg-transparent border text-white text-base px-8 rounded-md h-9  font-semibold transition-transform duration-200 ease-in-out transform hover:scale-105 hover:bg-transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.input-text {
+  @apply border border-[#A7A7A7] h-10 w-full rounded-md px-3;
+}
+
+h3 {
+  @apply text-[#141c5b] text-xl font-bold;
+}
+h6 {
+  @apply py-5 text-lg font-medium text-[#2C2C2C];
+}
+
+label {
+  @apply block text-sm lg:text-base font-medium pb-1 text-gray-700;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.textarea {
+  @apply border border-[#A7A7A7] p-4 h-40 w-full rounded-md;
+}
+
+.addbtn {
+  @apply bg-[#030E5C] text-white text-base h-12 w-full rounded-md transition-all duration-300 ease-in-out hover:bg-[#0f174b] focus:ring-2 focus:ring-[#141c5b];
+}
+
+.cancelbtn {
+  @apply bg-white text-black border-black border h-12 text-base w-full rounded-md transition-all duration-300 ease-in-out hover:bg-gray-100 focus:ring-2 focus:ring-black;
+}
+td {
+  @apply py-3 px-3 border-b w-full text-nowrap;
+}
+.activetbl {
+  @apply p-1 bg-green-100 w-fit px-6 rounded-md text-green-500;
+}
+.inactivetbl {
+  @apply p-1 bg-red-100 w-fit px-6 rounded-md text-red-500;
+}
