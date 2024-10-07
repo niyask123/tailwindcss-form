@@ -54,3 +54,6 @@ td {
 .inactivetbl {
   @apply p-1 bg-red-100 w-fit px-6 rounded-md text-red-500;
 }
+.container {
+  width: 96% !important;
+}
